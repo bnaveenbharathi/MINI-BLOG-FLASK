@@ -1,0 +1,30 @@
+.maincontent{
+
+}
+.widthsections{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.maincontent{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+   
+    width: 100%;
+    text-align: center;
+}
+textarea{
+    width: 100%;
+    height: 100vh;
+    border: none !important;
+    outline:none !important;
+    text-align: justify;
+}
+footer {
+    border-top: 2px solid var(--primary-green);
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+    padding: 10px;
+  }

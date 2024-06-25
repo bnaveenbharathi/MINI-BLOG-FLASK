@@ -1,0 +1,5 @@
+# Specify Python files
+*.py linguist-language=app.py
+*.js linguist-language=JavaScript
+*.html linguist-language=HTML
+*.css linguist-language=CSS

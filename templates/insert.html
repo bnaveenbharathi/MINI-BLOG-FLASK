@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="{{url_for('static',filename='css/insert.css')}}">
+<title> Insert | {{ name }}</title>
+{% extends 'base.html'%}
+{% block content %}
+<h3>New Post</h3>
+<div class="section">
+	
+	<div class="container">
+		<form method="post" action="/insertpost" enctype="multipart/form-data">
+			<table>
+				<tr>
+					<td>
+						<label class="title">Title</label>
+					</td>
+					<td>
+						<input type="text" name="title" required >
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="content">Content</label>
+
+					</td>
+					<td> 
+						
+						<textarea name="content" type='textarea' required ></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="imghead">Thumnail</label>
+					</td>
+					<td>
+						<input type="file" name="img" required >
+					</td>
+				</tr>
+				
+			</table>
+
+			<div class="submitbtn">
+				<button type="submit">Post</button>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}
+</body>
+</html>

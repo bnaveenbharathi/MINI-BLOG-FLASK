@@ -1,0 +1,21 @@
+
+
+<div class="sidebar">
+    <div class="sidecontent">
+        <div class="head">
+            <h2>{{ name }}</h2>
+        </div>
+        <div class="main_nav">
+            <ul>
+                <li><a href="{{ url_for('dashboard')}}">Posts</a></li>
+                <li><a href="{{ url_for('insertpost')}}">New Post</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+
+        </div>
+        <div class="logout">
+            <a href="{{url_for('logout')}}">Logout</a>
+        </div>
+    </div>
+</div>

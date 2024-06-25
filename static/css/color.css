@@ -1,0 +1,10 @@
+:root{
+    --primary-color:#ffae42;
+    --dark-orange:#e25800;
+    --primary-green:#4caf50;
+    --light-green:#8bc34a;
+    --font-color:#121212;
+}
+button{
+    outline: none !important;
+}

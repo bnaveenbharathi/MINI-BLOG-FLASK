@@ -1,0 +1,82 @@
+  <title>{{ name }}</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+   {% extends 'userbase.html'%}
+	{% block content %}
+ <!-- MAIN SECTION -->
+  <div class="section-1 mt-3">
+    <div class="content1">
+   {% for post in post[:1] %}
+   <a href="{{url_for('article',id=post.id)}}">
+    <img src="{{ post.img_path}}" alt=""  width="100%" height="102%">
+    <div class="con-content1">
+      <p>{{ post.title }}</p>
+    </div>
+   </a>
+  {% endfor %}
+</div>
+<div class="content2">
+  <div class="subcontent-1">
+  {% for post in post[1:2] %}
+ <a href="{{url_for('article',id=post.id)}}">
+  <img src="{{ post.img_path}}" alt="" width="100%" height="204px">
+  <div class="con-content2">
+   <p>{{ post.title }}</p>
+ </a>
+   </div>
+ {% endfor %}
+</div>
+<div class="subcontent-2">
+  {% for post in post[2:3] %}
+  <a href="{{url_for('article',id=post.id)}}"> <img src="{{ post.img_path}}" alt="" width="100%" height="201px">
+    <div class="con-content3">
+     <p>{{ post.title }}</p>
+    </div>
+  </a>
+   </div>
+ {% endfor %}
+</div>
+</div>
+<!-- content 2 end  -->
+</div>
+
+<!-- POST SECTION  -->
+<div class="bar widthsections mt-3 mb-3">
+  <div class="titlepost">
+  <h2>Recent Posts</h2>
+</div>
+</div>
+  <div class="con-section-2 widthsections">
+    
+    <div class="postcontent ">
+       {% for post in post%}
+       <div class="main-content">
+         <div class="post-content">
+             <div class="sideimg">
+              <img src="{{post.img_path}}" alt="" width="80px">
+             </div>
+             <div class="subcontent">
+              <h6>{{ post.title[:80]+'..'}}</h6>
+             <p>{{ post.content[:250]+'..'}}</p>
+             <a href="{{url_for('article',id=post.id)}}"><button>Read More</button></a>
+             </div>
+         </div>
+      
+        </div>
+        
+       {% endfor %}
+    </div>
+    
+</div>
+</div>
+  <footer class="widthsections mt-5 ">
+    <div class="footercontent ">
+      <p>© 2024 <a href="">{{name}}</a>. All Rights Reserved.</p>
+      <p class="ml-5">Designed and Developed by <a href="https://github.com/bnaveenbharathi">B. Naveen Bharathi</a></p>
+    </div>
+  </footer>
+    {% endblock %}
+
+
+
+</body>
+</html>

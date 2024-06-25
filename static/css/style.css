@@ -1,0 +1,179 @@
+@import url(/static/css/color.css);
+.section-1{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  max-width: 980px;
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  border-radius: 5px;
+  border :3px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+ 
+}
+.content1{
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.content1 img{
+    border: 1.1px solid var(--dark-orange);
+    border-radius: 5px;
+    opacity: 0.9;
+}
+.content2{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+  gap: 10px;
+}
+.content2 img{
+    border: 1.1px solid var(--dark-orange);
+    border-radius: 5px;
+}
+.content1:hover{
+  transform: scale(1.03);
+ 
+
+
+}
+.content1:hover img{
+  opacity: 1;
+}
+
+.content1:hover .con-content1{
+   opacity: 1;
+   transition: 0.2s ease-out;
+  animation: opacity 0.3s;
+}
+.con-content1{
+  background: var(--primary-color);
+  transform: translateY(-80px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  opacity: 0 ;
+
+}
+.con-content1 p{
+  text-align: justify;
+}
+.con-content2{
+  background: var(--primary-color);
+  transform: translateY(-85px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+ 
+}
+.subcontent-1{
+  transition: all 0.3s ease-in-out;
+}
+.subcontent-1:hover{
+  transform: scale(1.03);
+
+}
+.subcontent-1:hover .con-content2{
+  opacity: 1;
+  transition: 0.2s ease-out;
+ animation: opacity 0.3s;
+}
+.subcontent-2{
+  margin-top: -87px;
+  transition: all 0.3s ease-in-out;
+}
+.subcontent-2:hover{
+  transform: translateY(-87px);
+  transform: scale(1.03);
+}
+.con-content3{
+  background: var(--primary-color);
+  transform: translateY(-85px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.subcontent-2:hover .con-content3{
+  opacity: 1;
+  transition: 0.2s ease-out;
+ animation: opacity 0.3s;
+}
+@keyframes opacity{
+  0%{
+    opacity: 0.9;
+  }
+  50%{
+    opacity: 0.9;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.widthsections{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.con-section-2{
+ display: flex;
+ flex-direction: row;
+justify-content: space-between;
+
+}
+.postcontent{
+width: 100%;
+padding: 10px;
+}
+.post-content{
+  display: flex;
+  padding: 10px;
+ 
+}
+.subcontent{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.subcontent p{
+  text-align: justify;
+}
+.main-content{
+  border: 2px solid var(--dark-orange);
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+.subcontent a button{
+  padding: 5px;
+  width: 110px;
+  border: none;
+  background: var(--primary-color);
+  border-radius: 3px;
+
+}
+.titlepost h2{
+   margin-left: 8px;
+}
+.titlepost{
+  width: 100%;
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+footer {
+  border-top: 2px solid var(--primary-green);
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
+  padding: 10px;
+}

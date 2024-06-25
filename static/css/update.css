@@ -1,0 +1,51 @@
+@import url(/static/css/color.css);
+.section{
+    padding: 10px;
+}
+table tr td{
+    padding: 10px;
+}
+.title{
+    font-size: xx-large;
+text-transform: uppercase;
+}
+input[name="title"]{
+    border: none ;
+    outline: none !important;
+    border-bottom: 3px solid var(--dark-orange);
+    width: 640px;
+    max-width: 1200px;
+}
+.content{
+    font-size: xx-large;
+    text-transform: uppercase;
+    position: relative;
+    top: -250;
+}
+textarea[type='textarea']{
+    
+    outline: none !important;
+    border: 1px solid var(--dark-orange);
+    width: 640px;
+    height: 100vh;
+    
+}
+.imghead{
+    font-size: xx-large;
+    text-transform: uppercase;
+
+}
+.submitbtn{
+    padding: 20px;
+
+}
+.submitbtn button{
+    padding: 3px;
+    color: black;
+    background: var(--primary-color);
+    width: 70px;
+    border: none;
+    outline: none !important;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}

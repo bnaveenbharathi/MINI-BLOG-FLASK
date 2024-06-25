@@ -1,0 +1,22 @@
+@import url(/static/css/color.css);
+.maincontent{
+    width: 90%;
+    padding: 10px;
+    text-align: justify;
+    border: none;
+    height: 100vh;
+    outline: none !important;
+}
+.actionbtn button{
+    padding: 4px;
+    width:100px;
+    margin: 10px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+.actionbtn a{
+    color: black;
+    text-decoration: none;
+}

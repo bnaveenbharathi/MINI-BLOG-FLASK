@@ -1,0 +1,33 @@
+@import url(/static/css/color.css);
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 65px;
+    border-bottom: 2px solid var(--primary-green);
+    background: var(--primary-color);
+    justify-content: space-between;
+}
+.content ul {
+    display: flex;
+}
+.content ul li{
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+.main_Content{
+    max-width: 980px;
+    margin: 0 auto;
+    width: 100%;
+    
+    
+}

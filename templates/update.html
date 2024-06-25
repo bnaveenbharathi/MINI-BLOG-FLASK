@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="{{url_for('static',filename='css/update.css')}}">
+<title>Update Post </title>
+{% extends 'base.html'%}
+
+{% block content %}
+<h2 class="mt-1 mb-5">Update Post</h2>
+<div class="section">
+	<div class="container">
+		{% for article in article %}
+		<form method="post" action="/updatepost/{{ article.id}}" enctype="multipart/form-data">
+			<table>
+				<tr>
+					<td>
+						<label class="title">Title</label>
+					</td>
+					<td>
+						<input type="text" name="title" required value="{{ article.title }}">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="content">Content</label>
+					</td>
+					<td> 
+						<textarea name="content" type='textarea' required >{{ article.content }}</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Thumnail</label>
+					</td>
+					<td>
+						<input type="file" name="img" required  >
+					</td>
+				</tr>
+			</table>
+			<div class="submitbtn">
+				<button type="submit">Update</button>
+			</div>
+		</form>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}
+</body>
+</html>

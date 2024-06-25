@@ -1,0 +1,24 @@
+@import url(/static/css/color.css);
+.post{
+    display: flex;
+    flex-direction: row;
+   padding: 10px;
+}
+.contents{
+    padding: 10px;
+    background: var(--primary-color);
+    width:100%;
+    max-width: 780px;
+    height: 100%;
+    max-height: 150px;
+}
+.post img{
+    border: 2px solid var(--primary-color);
+}
+.actionbutton button {
+    padding: 4px;
+    color: green;
+    border: 1px solid var( --light-green);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    width: 70px;
+}
