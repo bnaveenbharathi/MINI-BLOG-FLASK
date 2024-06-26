@@ -1,3 +1,2 @@
 *.py linguist-language=Python
-templates/*.html linguist-language=HTML
-
+templates/*.html linguist-vendored
