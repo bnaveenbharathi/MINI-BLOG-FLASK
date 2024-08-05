@@ -1,3 +1,11 @@
+# Full Stack Web Development Project
+
+**Domain:** Full Stack Web Development  
+**Mentor:** Santhosh Kumar  
+**Company:** Codtech IT Solutions  
+**Duration:** June to August 2024
+
+
 # NextGen Mini Blog
 
 NextGen is a mini blog application built with Flask. It allows users to create, update, delete, and view blog posts. The application includes an admin dashboard for managing posts and user authentication for login and logout functionality.
