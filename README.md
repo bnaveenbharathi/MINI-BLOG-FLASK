@@ -1,10 +1,3 @@
-# Full Stack Web Development Project
-
-**Domain:** Full Stack Web Development  
-**Mentor:** Santhosh Kumar  
-**Company:** Codtech IT Solutions  
-**Duration:** June to August 2024
-
 
 # NextGen Mini Blog
 
